@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        background: wheat;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        height: 500px;
+        align-self: flex-end;
+    }
+    .item{
+        background: blue;
+        line-height: 100px;
+        width: 100px;
+        text-align: center;
+        margin: 20px;
+    }
+    .item3{
+        order: 2;
+    }
+    .item7{
+        order: 5;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class='box item'>1</div>
+        <div class='box item'>2</div>
+        <div class='box item'>3</div>
+        <div class='box item'>4</div>
+        <div class='box item'>5</div>
+        <div class='box item'>6</div>
+        <div class='box item item3'>7</div>
+        <div class='box item item7'>8</div>
+    </div>
+</body>
+</html>
